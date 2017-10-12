@@ -1,0 +1,166 @@
+/* ódýrt (en ekki gott!) reset á margin og padding á element sem má nota */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* setjum box-sizing: border-box; á allt */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/** meginmál **/
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+/** fyrirsagnir **/
+
+h1,
+h2,
+h3 {
+  font-family: 'Droid Serif', serif;
+}
+
+/** haus **/
+
+header {
+  font-family: 'Roboto Slab', serif;
+  opacity: 0.8;
+
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 2em;
+  padding: 2em;
+
+  width: 100%;
+  min-height: 500px;
+
+  background: url(bg-subpage.jpg) no-repeat 50% 50%;
+  background-size: cover;
+
+  justify-content: center;
+}
+
+  .header--one {
+    font-size: 4em;
+    color: white;
+  }
+
+/** valmynd **/
+
+ul {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.75);
+    font-family: 'Roboto Slab', serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+  .undercontainerA{
+    display: flex;
+    justify-content: flex-start;
+  }
+  .undercontainerB {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+li a {
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+    .active {
+
+    }
+
+    li a:hover {
+
+                        /** ATH VELJA LIT JÓN**/
+    }
+
+/** meginmál **/
+
+main {
+  font-family: 'Open Sans', sans-serif;
+
+  margin: 0 auto;
+  padding: 2em;
+  width: 100%;
+
+  border-bottom: 2px solid #999;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: -10px;
+  margin-left: auto;
+}
+
+.col {
+}
+  .col-12 {
+    width: 100%;
+  }
+  .col-5 {
+    width: 41.6666667%;
+    margin-right: 125px;
+  }
+  .col-6 {
+    width: 50%;
+    font-size: 1.5em;
+    letter-spacing: 1.5;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+
+/** texti **/
+
+
+}
+
+.tilvisun {
+  font-size: 48px;
+  letter-spacing: 1.5;
+  margin-left: 150px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+
+
+/** fótur **/
+
+footer {
+  width: 1200px;
+}
