@@ -1,2 +1,0 @@
-# Hopverkefni-Vefforritun
-prufa
