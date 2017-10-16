@@ -9,15 +9,25 @@
   </head>
   <body>
     <header>
+      <h1 class="heading__one">Kaupa</h1>
     </header>
+    <ul>
+      <div class="container">
+        <div class="undercontainerA">
+          <li><a class="active" href="#Fooþjónustan">Fooþjónustan</a></li>
+        </div>
+        <div class="undercontainerB">
+          <li><a href="#Kaupa">Kaupa</a></li>
+          <li><a href="#Um">Um</a></li>
+        </div>
+      </div>
+    </ul>
     <main>
-      <img src="bg-subpage.jpg">
-      <h1 class="heading heading__one">Kaupa</h1>
-      <form class="from" action="kaupa.html" method="post">
-        <div class="from__kaupa">
-          <div class="form__pers">
-            <h3 class="heading heading__three">Persónuupplýsingar</h3>
-            <div class="from__field">
+      <form class="form" action="kaupa.html" method="post">
+        <div class="form__kaupa">
+          <div class="form__uppl">
+            <h3 class="heading__three">Persónuupplýsingar</h3>
+            <div class="form__field">
               <label for="text" class="text">Nafn:</label>
               <input type="text" name="text" id="text" required>
             </div>
@@ -27,36 +37,36 @@
             </div>
             <div class="form__field">
               <p class="text">Kyn:</p>
-              <label for="radio" class="text">
-                <input type="radio" name="radio" value="Karl">
+              <label class="radio" for="radio">
+                <input class="radio" type="radio" name="radio" value="Karl">
                 Karl
               </label>
-              <label for="radio" class="text">
+              <label class="radio" for="radio">
                 <input type="radio" name="radio" value="Kona">
                 Kona
               </label>
-              <label for="radio" class="text">
+              <label class="radio" for="radio">
                 <input type="radio" name="radio" value="Annað">
                 Annað
               </label>
             </div>
-            <div class="from__field">
+            <div class="form__field">
               <label for="simi" class="text">Sími:</label>
               <input type="number" name="simi" id="simi" placeholder="+354 123 4567">
             </div>
-            <div class="from__field">
+            <div class="form__field">
               <label for="heimilisfang" class="text">Heimilisfang:</label>
               <input type="text" name="text" id="heimilisfang">
             </div>
-            <div class="from__field">
+            <div class="form__field">
               <label for="checkbox" class="text">
               <input type="checkbox" name="" value="Skrá mig á póstlista">
               Skrá mig á póstlista
               </label>
             </div>
           </div>
-          <div class="form__greidsla">
-            <h3 class="heading heading__three">Greiðsluupplýsingar</h3>
+          <div class="form__uppl">
+            <h3 class="heading__three">Greiðsluupplýsingar</h3>
             <div class="form__field">
               <label for="greida" class="text">Greiða með:</label>
               <select id="greida" class="select">
@@ -75,7 +85,7 @@
             </div>
             <div class="form__field">
               <label for="gildistimi" class="text">Gildistími:</label>
-              <div id="gildistimi">
+              <div class="gildistimi" id="gildistimi" >
                 <label for="man" class="text">Mán</label>
                 <select class="select" name="man" id="man">
                   <option value="01">01</option>
@@ -110,9 +120,10 @@
             </div>
           </div>
         </div>
-        <div class="button__form">
-          <button class="button" name="button">Panta</button>
-        </div>
+      </div>
+      <div class="button__form">
+        <button class="button" name="button">Panta</button>
+      </div>
       </form>
     </main>
     <footer>
@@ -133,3 +144,4 @@
     </footer>
   </body>
 </html>
+
