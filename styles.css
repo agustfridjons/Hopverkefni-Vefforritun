@@ -1,11 +1,9 @@
 
-/* ódýrt (en ekki gott!) reset á margin og padding á element sem má nota */
 * {
   margin: 0;
   padding: 0;
 }
 
-/* setjum box-sizing: border-box; á allt */
 html {
   box-sizing: border-box;
   font-size: 16px;
@@ -14,8 +12,6 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
-
-/** meginmál **/
 
 body {
   font-family: 'Raleway', sans-serif;
@@ -36,7 +32,7 @@ h3 {
   font-family: 'Droid Serif', serif;
 }
 
-/** haus **/
+
 
 header {
   display: flex;
@@ -46,28 +42,55 @@ header {
   padding: 2em;
 
   width: 100%;
-  min-height: 500px;
+  min-height: 750px;
 
   background: transparent url(bg.jpg) no-repeat fixed 50% 50%;
   background-size: cover;
 }
 
+.img1{
+  width: 20px;
+}
+
+}
 header .content {
   margin: auto;
 }
 
-header h1 {
+.button__buy> button{
+  padding: 1em;
+  margin-bottom: 6em;
+  animation-duration: 3s;
+  background-color: darkgrey;
+}
+@keyframes three {
+  0%{ opacity:0;}
+}
+
+.button__buy{
+  display: flex;
+  justify-content: center;
+}
+
+.header--three {
+  font-weight: 600;
+  margin-left: 96px;
+  font-size: 2.5em;
+  animation: one 1s ;
+}
+@keyframes one{
+  0%{ opacity: 0;}
+}
+
+.header--one {
+  font-weight: bold;
   font-size: 6em;
-  text-shadow: 3px 3px 0px rgba(255, 255, 255, 1);
+  animation: two 2s;
+}
+@keyframes two {
+  0%{ opacity: 0;}
 }
 
-header h2 {
-  font-size: 4em;
-  font-style: italic;
-  text-shadow: 3px 3px 0px rgba(255, 255, 255, 1);
-}
-
-/** meginmál **/
 
 main {
   margin: 0 auto;
@@ -77,5 +100,3 @@ main {
 
   border-bottom: 2px solid #999;
 }
-
-/** valmynd **/
