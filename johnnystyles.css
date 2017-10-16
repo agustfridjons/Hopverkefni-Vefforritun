@@ -30,7 +30,7 @@ a {
 h1,
 h2,
 h3 {
-  font-family: 'Droid Serif', serif;
+  font-family: 'Roboto Slab', serif;
 }
 
 /** haus **/
@@ -72,38 +72,52 @@ ul {
     background-color: rgba(0, 0, 0, 0.75);
     font-family: 'Roboto Slab', serif;
 }
-
-.container {
-  display: flex;
-  flex-direction: row;
-}
-  .undercontainerA{
-    display: flex;
-    justify-content: flex-start;
-  }
-  .undercontainerB {
-    display: flex;
-    justify-content: flex-end;
-  }
-
-li a {
-    display: flex;
-    justify-content: flex-end;
+  a {
     color: white;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    margin-left: 20px;
-    text-decoration: none;
+    font-size: 1em;
+  }
+
+.valmynd {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 31.5px;
+  margin-left: 31.5px;
 }
+  .ValA {
+    font-size: 24px;
+    margin-top: 5px;
+    margin-right: auto;
 
-    .active {
+    font-weight: bold;
+  }
 
-    }
-
-    li a:hover {
-
-                        /** ATH VELJA LIT JÓN**/
-    }
+  .ValB>.um {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    height: 40px;
+    width: 70px;
+    padding-top: 15px;
+    margin-right: -35px;
+  }
+.ValC>.button {
+  font-size: 16px;
+  height: 40px;
+  width: 70px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 18px;
+  background-color: grey;
+  border: solid;
+  border-color: grey;
+  border-radius: 5px;
+}
+  .ValC>.button:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.75);
+    transition-duration: 500ms;
+  }
 
 /** meginmál **/
 
@@ -118,11 +132,13 @@ main {
 }
 
 .row {
+  font-family: 'Open Sans', sans-serif;
+
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   margin-top: 20px;
   margin-bottom: 20px;
-  margin-right: -10px;
+  margin-right: auto;
   margin-left: auto;
 }
 
@@ -133,15 +149,21 @@ main {
   }
   .col-5 {
     width: 41.6666667%;
-    margin-right: 125px;
+    margin-right: 150px;
   }
   .col-6 {
+    font-weight: bold;
+    font-style: italic;
     width: 50%;
     font-size: 1.5em;
     letter-spacing: 1.5;
     margin-top: 1em;
     margin-bottom: 1em;
   }
+    .tilvisunhofundur {
+      font-size: 12px;
+      font-style: normal;
+    }
 
 
 /** texti **/
