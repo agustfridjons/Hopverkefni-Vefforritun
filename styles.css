@@ -24,79 +24,227 @@ a {
   text-decoration: none;
 }
 
-/** fyrirsagnir **/
-
-h1,
-h2,
-h3 {
-  font-family: 'Droid Serif', serif;
-}
-
-
-
 header {
   display: flex;
   flex-direction: column;
 
-  margin-bottom: 2em;
   padding: 2em;
 
   width: 100%;
   min-height: 750px;
 
-  background: transparent url(bg.jpg) no-repeat fixed 50% 50%;
-  background-size: cover;
+  background: transparent url(bg.jpg) no-repeat fixed;
+  background-size: 100% 100%;
+  justify-content: center;
+  align-items: center;
 }
 
-.img1{
-  width: 20px;
-}
-
-}
-header .content {
-  margin: auto;
-}
-
-.button__buy> button{
-  padding: 1em;
-  margin-bottom: 6em;
-  animation-duration: 3s;
-  background-color: darkgrey;
-}
-@keyframes three {
-  0%{ opacity:0;}
-}
 
 .button__buy{
   display: flex;
   justify-content: center;
+  margin-top: 100px;
+
+}
+
+.button__buy> button{
+  padding: 15px 5px 15px 5px;
+  font-size: 2em;
+  max-width: 256px;
+  width: 100%;
+  color: #eee;
+  background-color: #666;
+  border-radius: 3px;
+  border: 1px solid;
+  border-color: #666;
+  cursor: pointer;
+  transition: background-color 500ms ease;
+  margin-bottom: 5em;
+  animation: 3s ease-in 0s normal forwards 1 three;
+}
+@keyframes three {
+    0% { opacity:0; }
+    66% { opacity:0; }
+    100% { opacity:1; }}
+
+.button__kaupa> button{
+  padding: 12px 5px 12px 5px;
+  font-size: 2em;
+  max-width: 180px;
+  width: 100%;
+  color: #eee;
+  background-color: #666;
+  border-radius: 3px;
+  border: 1px solid;
+  border-color: #666;
+  transition: background-color 500ms ease;
+  cursor: pointer;
+  margin-left: 645px;
+  margin-bottom: 85px;
 }
 
 .header--three {
+  margin-top: 240px;
   font-weight: 600;
   margin-left: 96px;
   font-size: 2.5em;
-  animation: one 1s ;
+  animation: 1s ease-in 0s normal forwards 1 one;
 }
 @keyframes one{
   0%{ opacity: 0;}
+  66%{ opacity: 0;}
+  100%{ opacity: 1;}
 }
 
 .header--one {
   font-weight: bold;
   font-size: 6em;
-  animation: two 2s;
+  animation: 2s ease-in 0s normal forwards 1 two;
 }
 @keyframes two {
   0%{ opacity: 0;}
+  66%{ opacity: 0;}
+  100%{ opacity: 1;}
 }
 
+.card__heading{
+  margin-left: 40px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.img1{
+  margin-left: 10px;
+  width: 20px;
+  float: left;
+}
+
+.img2{
+  width: 500px;
+  float: right;
+
+}
 
 main {
-  margin: 0 auto;
-  padding: 2em;
-  width: 100%;
-  max-width: 1200px;
-
   border-bottom: 2px solid #999;
+
+}
+
+.bida{
+  margin-left: 547px;
+  margin-bottom: 20px;
+  margin-top: 100px;
+  font-size: 26px;
+}
+
+.card__img{
+  border-radius: 50%;
+}
+.card__heading1{
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.card__text1{
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.card__text{
+  font-size: 12px;
+}
+
+ul {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.75);
+    font-family: 'Roboto Slab', serif;
+}
+  a {
+    color: white;
+    font-size: 1em;
+  }
+
+.valmynd {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 31.5px;
+  margin-left: 31.5px;
+}
+
+.ValA {
+    font-size: 24px;
+    margin-top: 10px;
+    margin-right: auto;
+
+    font-weight: bold;
+  }
+
+.ValB>.um {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    height: 40px;
+    width: 70px;
+    padding-top: 15px;
+    margin-right: -35px;
+  }
+
+.ValC>.button {
+  font-size: 16px;
+  height: 40px;
+  width: 70px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 18px;
+  background-color: grey;
+  border: solid;
+  border-color: grey;
+  border-radius: 5px;
+}
+  .ValC>.button:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.75);
+    transition-duration: 500ms;
+  }
+
+  .footer{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: auto;
+  background-color: #333;
+  font-size: 12px;
+  color: #eee;
+}
+
+.footer1{
+  padding: 20px;
+  display: flex;
+  width: 50%;
+  margin: auto;
+  justify-content: space-around;
+}
+
+.footer__one{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.footer2{
+  border-top: 2px solid;
+  border-color: #7e7e7e;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  color: #7e7e7e;
+  margin: 10px;
 }
