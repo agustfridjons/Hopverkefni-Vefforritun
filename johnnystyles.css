@@ -1,10 +1,8 @@
-/* ódýrt (en ekki gott!) reset á margin og padding á element sem má nota */
 * {
   margin: 0;
   padding: 0;
 }
 
-/* setjum box-sizing: border-box; á allt */
 html {
   box-sizing: border-box;
   font-size: 16px;
@@ -20,16 +18,9 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-a {
-  color: #333;
-  text-decoration: none;
-}
-
 /** fyrirsagnir **/
 
-h1,
-h2,
-h3 {
+h1 {
   font-family: 'Roboto Slab', serif;
 }
 
@@ -75,6 +66,7 @@ ul {
   a {
     color: white;
     font-size: 1em;
+    text-decoration: none;
   }
 
 .valmynd {
@@ -131,53 +123,29 @@ main {
   border-bottom: 2px solid #999;
 }
 
-.row {
-  font-family: 'Open Sans', sans-serif;
-
-  display: flex;
-  flex-wrap: nowrap;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.col {
-}
-  .col-12 {
-    width: 100%;
-  }
-  .col-5 {
-    width: 41.6666667%;
-    margin-right: 150px;
-  }
-  .col-6 {
-    font-weight: bold;
-    font-style: italic;
-    width: 50%;
-    font-size: 1.5em;
-    letter-spacing: 1.5;
-    margin-top: 1em;
-    margin-bottom: 1em;
-  }
-    .tilvisunhofundur {
-      font-size: 12px;
-      font-style: normal;
-    }
-
-
 /** texti **/
 
-
+p {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .tilvisun {
-  font-size: 48px;
-  letter-spacing: 1.5;
-  margin-left: 150px;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  float: right;
+  width: 45%;
+  font-size: 21px;
+  font-weight: bold;
+  font-style: italic;
+  margin-top: 30px;
+  margin-bottom: 80px;
+  margin-left: 120px;
 }
+
+  .tilvisunhofundur {
+    font-size: 12px;
+    font-style: normal;
+  }
+
 
 
 
