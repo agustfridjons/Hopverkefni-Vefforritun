@@ -39,13 +39,28 @@ header {
   align-items: center;
 }
 
+.card__heading{
+  display: flex;
+  flex-direction: column;
+}
+
 
 .button__buy{
   display: flex;
   justify-content: center;
   margin-top: 100px;
-
 }
+
+.row{
+  display: flex;
+}
+
+.col-6{
+display: flex;
+flex-direction: column;
+width: 50%;
+}
+
 
 .button__buy> button{
   padding: 15px 5px 15px 5px;
@@ -107,14 +122,9 @@ header {
   100%{ opacity: 1;}
 }
 
-.card__heading{
-  margin-left: 40px;
-  margin-top: 100px;
-  margin-bottom: 100px;
-}
 
 .img1{
-  margin-left: 10px;
+
   width: 20px;
   float: left;
 }
@@ -123,7 +133,10 @@ header {
   width: 500px;
   float: right;
 
+  margin-left: auto;
 }
+
+
 
 main {
   border-bottom: 2px solid #999;
