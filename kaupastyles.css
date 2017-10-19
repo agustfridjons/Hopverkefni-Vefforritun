@@ -17,6 +17,7 @@ html {
 font-family: 'Open Sans', sans-serif;
 font-family: 'Roboto Slab', serif;
 */
+
 h1, h2, h3 {
   font-family: 'Roboto Slab', serif;
 }
@@ -24,14 +25,13 @@ h1, h2, h3 {
 /* haus */
 
 header {
-  font-family: 'Roboto Slab', serif;
   opacity: 0.8;
 
   display: flex;
   flex-direction: column;
 
-  margin-bottom: 2em;
-  padding: 2em;
+  margin-bottom: 20px;
+  padding: 10px;
 
   width: 100%;
   min-height: 500px;
@@ -40,11 +40,6 @@ header {
   background-size: cover;
 
   justify-content: center;
-}
-
-.header--one {
-  font-size: 4em;
-  color: white;
 }
 
 h1{
@@ -63,32 +58,46 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: rgba(0, 0, 0, 0.75);
-    font-family: 'Roboto Slab', serif;
 }
 
-.container {
+a{
+  text-decoration: none;
+  color: #eee;
+}
+
+.valmynd{
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 10px;
+}
+
+.valmynd1{
+  font-size: 24px;
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
+  color: #eee;
+}
+
+.valmynd2{
   display: flex;
   flex-direction: row;
 }
 
-.undercontainerA{
-  display: flex;
-  justify-content: flex-start;
+.ValA{
+  margin-right: 10px;
+  padding: 5px 10px;
 }
 
-.undercontainerB {
-  display: flex;
-  justify-content: flex-end;
-}
-
-li a {
-    display: flex;
-    justify-content: flex-end;
-    color: #eee;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    margin-left: 20px;
-    text-decoration: none;
+.ValB>.button{
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #666;
+  border: solid 1px;
+  border-color: #666;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 500ms ease;
 }
 
 /* Form */
@@ -152,7 +161,7 @@ input:hover{
   justify-content: center;
 }
 
-.button{
+.button__form>.button{
   padding: 10px 5px 10px 5px;
   max-width: 256px;
   width: 100%;
@@ -168,6 +177,8 @@ input:hover{
 .button:hover {
   background-color: #333
 }
+
+/* fótur */
 
 .footer{
   display: flex;
@@ -191,7 +202,7 @@ input:hover{
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+
 }
 
 .footer2{
