@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Kaupa-Fooþjónusa</title>
+    <link rel="stylesheet" href="kaupastyles.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1 class="heading__one">Kaupa</h1>
+    </header>
+    <ul>
+      <div class="valmynd">
+        <div class="valmynd1">
+            <li><a class="Foo" href="Forsida.html">Fooþjónustan</a></li>
+        </div>
+        <div class="valmynd2">
+          <div class="ValA">
+            <li><a href="About.html">Um</a></li>
+          </div>
+          <div class="ValB">
+            <button class="button"><a class="Kaupa"href="kaupa.html">Kaupa</a></button>
+          </div>
+        </div>
+      </div>
+    </ul>
+    <main>
+      <form class="form" action="kaupa.html" method="post">
+        <div class="form__kaupa">
+          <div class="form__uppl">
+            <h3 class="heading__three">Persónuupplýsingar</h3>
+            <div class="form__field">
+              <label for="text" class="text">Nafn:</label>
+              <input type="text" name="text" id="text" required>
+            </div>
+            <div class="form__field">
+              <label for="email" class="text">Netfang:</label>
+              <input type="email" name="email" id="email" required>
+            </div>
+            <div class="form__field">
+              <p class="text">Kyn:</p>
+              <label class="radio" for="radio">
+                <input class="radio" type="radio" name="radio" value="Karl">
+                Karl
+              </label>
+              <label class="radio" for="radio">
+                <input type="radio" name="radio" value="Kona">
+                Kona
+              </label>
+              <label class="radio" for="radio">
+                <input type="radio" name="radio" value="Annað">
+                Annað
+              </label>
+            </div>
+            <div class="form__field">
+              <label for="simi" class="text">Sími:</label>
+              <input type="number" name="simi" id="simi" placeholder="+354 123 4567">
+            </div>
+            <div class="form__field">
+              <label for="heimilisfang" class="text">Heimilisfang:</label>
+              <input type="text" name="text" id="heimilisfang">
+            </div>
+            <div class="form__field">
+              <label for="checkbox" class="text">
+              <input type="checkbox" name="" value="Skrá mig á póstlista">
+              Skrá mig á póstlista
+              </label>
+            </div>
+          </div>
+          <div class="form__uppl">
+            <h3 class="heading__three">Greiðsluupplýsingar</h3>
+            <div class="form__field">
+              <label for="greida" class="text">Greiða með:</label>
+              <select id="greida" class="select">
+                <option value="Kreditkort">Kreditkorti</option>
+                <option value="Debitkort">Debitkorti</option>
+                <option value="Reiðufé">Reiðufé</option>
+              </select>
+            </div>
+            <div class="form__field">
+              <label for="text" class="text">Nafn á korti:</label>
+              <input type="text" name="text" id="text">
+            </div>
+            <div class="form__field">
+              <label for="kortanumer" class="text">Kortanumer:</label>
+              <input type="number" name="kortanumer" id="kortanumer" placeholder="5999-9999-9999-9999">
+            </div>
+            <div class="form__field">
+              <label for="gildistimi" class="text">Gildistími:</label>
+              <div class="gildistimi" id="gildistimi" >
+                <label for="man" class="text">Mán</label>
+                <select class="select" name="man" id="man">
+                  <option value="01">01</option>
+                  <option value="02">02</option>
+                  <option value="03">03</option>
+                  <option value="04">04</option>
+                  <option value="05">05</option>
+                  <option value="06">06</option>
+                  <option value="07">07</option>
+                  <option value="08">08</option>
+                  <option value="09">09</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                </select>
+                <label for="ar" class="text">Ár</label>
+                <select class="select" name="ar" id="ar">
+                  <option value="2017">2017</option>
+                  <option value="2018">2018</option>
+                  <option value="2019">2019</option>
+                  <option value="2020">2020</option>
+                  <option value="2021">2021</option>
+                  <option value="2022">2022</option>
+                  <option value="2023">2023</option>
+                  <option value="2024">2024</option>
+                  <option value="2025">2025</option>
+                  <option value="2026">2026</option>
+                  <option value="2027">2027</option>
+                  <option value="2028">2028</option>
+                  <option value="2029">2029</option>
+                </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="button__form">
+        <button class="button" name="button">Panta</button>
+      </div>
+      </form>
+    </main>
+    <footer class="footer">
+      <div class="footer1">
+        <div class="footer__one">
+          <p>Fooþjónusta</p>
+          <p>123-4567</p>
+        </div>
+        <div class="footer__one">
+          <p>Opið Sunnudaga 12-13</p>
+          <p>Bargata 7</p>
+          <p>900 Foobar</p>
+        </div>
+      </div>
+      <div class="footer2">
+        <p>© Fooþjonusta 2017</p>
+      </div>
+    </footer>
+  </body>
+</html>
