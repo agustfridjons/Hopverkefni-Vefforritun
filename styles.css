@@ -50,11 +50,10 @@ header {
   margin-top: 100px;
 }
 
-.button__buy> .button{
+.button__buy>.button_takki>.button{
   padding: 15px 5px 15px 5px;
   font-size: 2em;
-  max-width: 256px;
-  width: 100%;
+  width: 256px;
   color: #eee;
   background-color: #666;
   border-radius: 3px;
@@ -70,7 +69,7 @@ header {
     66% { opacity:0; }
     100% { opacity:1; }}
 
-.button:hover{
+.button__buy>.button_takki>.button:hover{
   background-color: #333;
 }
 
@@ -115,6 +114,13 @@ ul {
 a {
   color: white;
   font-size: 1em;
+  text-decoration: none;
+}
+
+a .button{
+  color: white;
+  font-size: 1em;
+  text-decoration: none;
 }
 
 .valmynd {
@@ -142,7 +148,7 @@ a {
   margin-right: -35px;
 }
 
-.ValC>.button {
+.ValC>.button_takki>.button {
   font-size: 16px;
   height: 40px;
   width: 70px;
@@ -155,7 +161,7 @@ a {
   border-radius: 5px;
 }
 
-.ValC>.button:hover {
+.ValC>.button_takki>.button:hover {
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0.75);
   transition-duration: 500ms;
@@ -249,7 +255,7 @@ a {
   align-items: center;
 }
 
-.button__kaupa>.button{
+.button__kaupa>.button_takki>.button{
   padding: 12px 5px 12px 5px;
   font-size: 2em;
   width: 180px;
@@ -263,7 +269,7 @@ a {
   transition: background-color 500ms ease;
 }
 
-.button__kaupa>.button:hover{
+.button__kaupa>.button_takki>.button:hover{
   background-color: #333;
 }
 

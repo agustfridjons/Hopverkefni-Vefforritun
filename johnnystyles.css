@@ -65,6 +65,12 @@ a {
   text-decoration: none;
 }
 
+a .button{
+  color: white;
+  font-size: 1em;
+  text-decoration: none;
+}
+
 .valmynd {
   display: flex;
   flex-wrap: nowrap;
@@ -90,7 +96,7 @@ a {
   margin-right: -35px;
 }
 
-.ValC>.button {
+.ValC>.button_takki>.button {
   font-size: 16px;
   height: 40px;
   width: 70px;
@@ -103,7 +109,7 @@ a {
   border-radius: 5px;
 }
 
-.ValC>.button:hover {
+.ValC>.button_takki>.button:hover {
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0.75);
   transition-duration: 500ms;
