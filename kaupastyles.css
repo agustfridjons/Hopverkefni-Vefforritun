@@ -113,7 +113,7 @@ a .button{
 /* Form */
 
 .form{
-  margin: 60px 20px 60px 20px;
+  margin: 60px 20px;
 }
 
 .form__kaupa{
@@ -127,7 +127,7 @@ a .button{
 }
 
 .form__field{
-  margin: 20px 0px 20px 0px;
+  margin: 20px 0px;
   display: flex;
   flex-direction: column;
 }
@@ -172,7 +172,7 @@ input:hover{
 }
 
 .button__form>.button{
-  padding: 10px 5px 10px 5px;
+  padding: 10px 5px;
   max-width: 256px;
   width: 100%;
   color: #eee;
