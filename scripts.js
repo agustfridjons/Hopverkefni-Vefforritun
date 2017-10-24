@@ -21,15 +21,13 @@ var games = [];
  * Ef ýtt er á "cancel" er niðurstöðum leikja skilað með getResults() og alert()
  */
 function start() {
-  while (confirm('Viltu giska á tölu?')) {
+  keepPlaying = true;
+  while(keepPlaying) {
     play();
-    if(confirm('Spila aftur?')){
-    continue;
-    }
-    else {
-      getResults();
-    }
+    keepPlaying = confirm('Spila annan leik?');
   }
+  games.push();
+  alert(getResults());
 }
 
 /**
@@ -50,25 +48,22 @@ function play() {
   var n = 100;
   var random = randomNumber(n);
   var tilraun = 0;
-  var guess = 'Giskaðu á tölu frá 0 upp í ' + n + '.';
-  while (prompt(guess)) {
-    giskun = parseGuess(guess);
-    tilraun++;
-    if(giskun === random){
-      alert(getResponse(giskun, random));
-    }
-    else if (false) {
-      tilraun = 0;
+  var giskun = NaN;
+  var stop = false;
+  while (giskun != random) {
+    giskun = parseGuess(prompt('Giskaðu á tölu frá 0 upp í ' + n + '.'));
+    if (giskun == null) {
+      stop = true;
       break;
     }
-    else{
-      alert(getResponse(giskun, random));
-    }
+    alert(getResponse(giskun, random));
+    tilraun++;
   }
-  games.push(tilraun);
-  return;
+  if(!stop){
+    games.push(tilraun);
+  }
 }
-.breakpoint;
+
 /**
  * Skilar niðurstöðum um spilaða leiki sem streng.
  * Fjölda leikja er skilað ásamt meðalfjölda giska, t.d.:
@@ -77,9 +72,15 @@ function play() {
  * Ath að meðalfjöldi kemur í nýrri línu.
  * Ef enginn leikur var spilaður er "Þú spilaðir engan leik" skilað.
  */
-function getResults() {
-  alert('Þú spilaðir ' + games.length + ' leiki.\nMeðalfjöldi ágiskana var ' + calculateAverage() + '.');
-}
+function getResults(){
+  if(games.length < 1) {
+ 		return "Þú spilaðir engan leik.";
+ 	}
+ 	if(games.length == 1) {
+ 		return "Þú spilaðir 1 leik.\nMeðalfjöldi ágiskana var " + calculateAverage() + '.';
+ 	}
+ 	return "Þú spilaðir " + games.length + " leiki.\nMeðalfjöldi ágiskana var " + calculateAverage() + '.';
+ }
 
 /**
  * Reiknar út og skilar meðal ágiskunum í öllum leikjum sem geymdir eru í
@@ -91,12 +92,12 @@ function getResults() {
  * Þarf að útfæra með lykkju.
  */
 function calculateAverage() {
-  var sum;
+  var sum = 0;
   for (var i = 0; i < games.length; i++){
     sum += games[i];
   }
-  var mtal = sum/games.length;
-  return mtal;
+  var mtal = sum / games.length;
+  return mtal.toFixed(2);
 }
 
 /**
@@ -104,13 +105,10 @@ function calculateAverage() {
  * Ef ekki er hægt að ná tölu úr input er null skilað.
  */
 function parseGuess(input) {
-  var gisk = parseInt(input);
-  if(typeof gisk === "number"){
-    return gisk;
-  }
-  else{
-    return null;
-  }
+  if((input == null) || (input == NaN)) {
+		return null;
+	}
+	return parseInt(input);
 }
 
 /**
@@ -129,28 +127,28 @@ function parseGuess(input) {
  * Math.abs skilar algildi tölu: |a| = Math.abs(a)
  */
 function getResponse(guess, correct) {
-  if ((guess = NaN) || (guess < 0)){
+  if (!Number.isInteger(guess)){
     'Ekki rétt';
   }
-  else if (guess === correct){
+  if (guess < 0){
+    'Ekki rétt';
+  }
+  if (guess == correct){
     return 'Rétt';
   }
-  else if (Math.abs(correct - guess) < 5) {
+  if (Math.abs(correct - guess) < 5) {
     return 'Mjög nálægt';
   }
-  else if (Math.abs(correct - guess) < 10) {
+  if (Math.abs(correct - guess) < 10) {
     return 'Nálægt';
   }
-  else if (Math.abs(correct - guess) < 20) {
+  if (Math.abs(correct - guess) < 20) {
     return 'Frekar langt frá';
   }
-  else if (Math.abs(correct - guess) < 50) {
+  if (Math.abs(correct - guess) < 50) {
     return 'Langt frá';
   }
-  else{
-    return 'Mjög langt frá';
-  }
-  return 'Ekki rétt';
+  return 'Mjög langt frá';
 }
 
 /**
